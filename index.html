@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -21,17 +21,17 @@
                     <h1>/LP/</h1>
                     <nav id="nav" class="">
                       <ul id="links">
-                          <li><a href="#inicio" class="seleccionado"></a>INICIO</li>
-                          <li><a href="#sobremi"></a>SOBRE MI</li>
-                          <li><a href="#servicios"></a>SEVICIOS</li>
-                          <li><a href="#portfolio"></a>PORTFOLIO</li>
-                          <li><a href="#contacto"></a>CONTACTO</li>
+                          <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)"></a>INICIO</li>
+                          <li><a href="#sobremi" onclick="seleccionar(this)" ></a>SOBRE MI</li>
+                          <li><a href="#servicios" onclick="seleccionar(this)"></a>SEVICIOS</li>
+                          <li><a href="#portfolio" onclick="seleccionar(this)"></a>PORTFOLIO</li>
+                          <li><a href="#contacto"  onclick="seleccionar(this)"></a>CONTACTO</li>
                       </ul>
                     </nav>
           
                     <!-- iconos del menu -->
           
-                    <div id="icon-nav">
+                    <div id="icon-nav" onclick="responsiveMenu()">
                       <i class="fa-solid fa-bars"></i>
                     </div>
           
@@ -67,18 +67,24 @@
             <h3>Desarrolladora Web Full Stack</h3>
             <p>Actualmente termine mis estudios como full-stack Web Developer, 
                 un sueño cumplido después de un año de mucho estudio, que requirió de mucho esfuerzo y dedicación.
-                 Antes de emprender este camino en el desarrollo web, estudie comercio Internacional y 
-                 posteriormente trabaje en una entidad del estado, un lugar en el que aprendí mucho, 
-                 sin embargo el estar en este lugar me permitió darme cuenta que mis aspiraciones, 
-                 mis sueños y mis gustos eran muy diferentes, así que un día decidí tomar una decisión radical 
-                 y darle ese giro profesional a mi vida y empezar a estudiar algo que me apasiona 
-                 y que desde hace mucho tiempo quería pero no me atrevía por el miedo, pero que logre vencer.
-                En este momento aspiro encontrar una empresa en la cual pueda aportar los conocimientos adquiridos
-                 a lo largo de este año, que a pesar de que no tengo experiencia laboral, 
-                 si tengo experiencia realizando diferentes proyectos tanto individual como grupalmente, 
-                 los cuales me han permitido mejorar mis habilidades y conocimientos, 
-                 por lo tanto siento que estoy en la capacidad de enfrentarme a un reto laboral en donde 
-                 espero aprender y entregar lo mejor de mi.
+                <p>
+
+                    Antes de emprender este camino en el desarrollo web, estudie comercio Internacional y 
+                    posteriormente trabaje en una entidad del estado, un lugar en el que aprendí mucho, 
+                    sin embargo el estar en este lugar me permitió darme cuenta que mis aspiraciones, 
+                    mis sueños y mis gustos eran muy diferentes, así que un día decidí tomar una decisión radical 
+                    y darle ese giro profesional a mi vida y empezar a estudiar algo que me apasiona 
+                    y que desde hace mucho tiempo quería pero no me atrevía por el miedo, pero que logre vencer.
+                </p>
+                 <p>
+
+                     En este momento aspiro encontrar una empresa en la cual pueda aportar los conocimientos adquiridos
+                      a lo largo de este año, que a pesar de que no tengo experiencia laboral, 
+                      si tengo experiencia realizando diferentes proyectos tanto individual como grupalmente, 
+                      los cuales me han permitido mejorar mis habilidades y conocimientos, 
+                      por lo tanto siento que estoy en la capacidad de enfrentarme a un reto laboral en donde 
+                      espero aprender y entregar lo mejor de mi.
+                 </p>
                 </p>
                 <a href="#">Descargar CV</a>
         </div>
@@ -125,5 +131,151 @@
 
         </div>
     </section>
+
+    <!-- seccion habilidades -->
+
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista">Html & Css</span></p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="htlm" class="barra-progreso1"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista">React</span></p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="react" class="barra-progreso2"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista">Javascript</span></p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso3"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista">Redux</span></p>
+                <span class="porcentaje">60%</span>
+            </div>
+            <div class="barra">
+                <div id="redux" class="barra-progreso4"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista">Express</span></p>
+                <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+                <div id="express" class="barra-progreso5"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista">PostgreSql</span></p>
+                <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+                <div id="postgre" class="barra-progreso6"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista">Node js</span></p>
+                <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+                <div id="node" class="barra-progreso7"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista">Postman</span></p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="postman" class="barra-progreso8"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- seccion portafolio -->
+    <seccion id="portfolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/pokemonapi.jpeg" alt=""/>
+                <div class="info">
+                    <h4>Descripcion del proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/e-commerce shoes.jpeg" alt=""/>
+                <div class="info">
+                    <h4>Descripcion del proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/pokemonapi.jpeg" alt=""/>
+                <div class="info">
+                    <h4>Descripcion del proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </seccion>
+
+    <!-- seccion CONTACTO -->
+
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Direccion de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- seccion footer -->
+
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
